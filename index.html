@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nguyễn Văn A</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header .title {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        header .contact {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        header .contact a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        header .contact a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .summary p {
+            font-size: 1.05rem;
+            color: #555;
+            text-align: justify;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid #3498db;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .item-header h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        .item-header .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .item-header .company {
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .experience-item ul {
+            margin-top: 0.5rem;
+            margin-left: 1.2rem;
+        }
+
+        .experience-item li {
+            margin-bottom: 0.3rem;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem;
+        }
+
+        .skill-tag {
+            background: #ecf0f1;
+            padding: 0.6rem 1rem;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #2c3e50;
+            transition: all 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .project-item .project-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .project-item .project-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; max-width: 100%; }
+            header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 1rem; border-radius: 0; }
+            header { padding: 1.5rem; }
+            header h1 { font-size: 2rem; }
+            main { padding: 1.5rem; }
+            header .contact { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nguyễn Văn A</h1>
+            <p class="title">Lập trình viên Fullstack / Frontend Developer</p>
+            <div class="contact">
+                <a href="mailto:nguyenvana@email.com">✉ nguyenvana@email.com</a>
+                <a href="tel:+84901234567">📞 +84 90 123 4567</a>
+                <a href="https://linkedin.com/in/nguyenvana" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/nguyenvana" target="_blank">💻 GitHub</a>
+                <a href="https://nguyenvana.dev" target="_blank">🌐 Portfolio</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="summary">
+                <h2>Mục tiêu nghề nghiệp</h2>
+                <p>
+                    Lập trình viên Fullstack có 3+ năm kinh nghiệm phát triển ứng dụng web hiện đại với React, Node.js, TypeScript.
+                    Có nền tảng vững chắc về kiến trúc phần mềm, database design, và CI/CD.
+                    Đam mê học hỏi công nghệ mới, viết code sạch, có khả năng làm việc nhóm tốt và giải quyết vấn đề hiệu quả.
+                    Mong muốn đóng góp vào các dự án thách thức tại môi trường chuyên nghiệp.
+                </p>
+            </section>
+
+            <section class="experience">
+                <h2>Kinh nghiệm làm việc</h2>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <h3>Senior Frontend Developer</h3>
+                        <span class="date">03/2022 - Nay</span>
+                    </div>
+                    <p class="company">Công ty TNHH Tech Solutions - Hà Nội</p>
+                    <ul>
+                        <li>Phát triển và bảo trì hệ thống quản trị nội bộ phục vụ 500+ nhân viên sử dụng React, TypeScript, Redux Toolkit</li>
+                        <li>Tối ưu hiệu suất ứng dụng: giảm 40% thời gian load trang, cải thiện Core Web Vitals</li>
+                        <li>Thiết kế component library chung, chuẩn hóa UI/UX cho 5+ dự án con</li>
+                        <li>Dẫn dắt team 4 developers: code review, mentoring, thiết kế kiến trúc frontend</li>
+                        <li>Triển khai CI/CD pipeline với GitHub Actions, Docker, AWS ECS</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <h3>Fullstack Developer</h3>
+                        <span class="date">06/2020 - 02/2022</span>
+                    </div>
+                    <p class="company">Startup Fintech - TP. Hồ Chí Minh</p>
+                    <ul>
+                        <li>Xây dựng API RESTful với Node.js (Express), PostgreSQL, Redis cho hệ thống thanh toán</li>
+                        <li>Phát triển dashboard admin real-time với React, Socket.io, Chart.js</li>
+                        <li>Tích hợp payment gateway (VNPay, MoMo, Stripe) và ngân hàng</li>
+                        <li>Viết unit/integration test với Jest, Supertest (coverage > 85%)</li>
+                        <li>Tham gia thiết kế database, migration, optimization query</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <h3>Junior Web Developer</h3>
+                        <span class="date">01/2019 - 05/2020</span>
+                    </div>
+                    <p class="company">Digital Agency - Đà Nẵng</p>
+                    <ul>
+                        <li>Phát triển website thương mại điện tử, landing page với WordPress, Vue.js</li>
+                        <li>Chuyển đổi thiết kế Figma/Adobe XD thành HTML/CSS/JS responsive, cross-browser</li>
+                        <li>Tối ưu SEO on-page, PageSpeed Insights > 90</li>
+                        <li>Hỗ trợ deploy, cấu hình server (Nginx, SSL, domain)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Giáo dục</h2>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <h3>Kỹ sư Khoa học Máy tính</h3>
+                        <span class="date">2015 - 2019</span>
+                    </div>
+                    <p class="company">Đại học Bách Khoa Hà Nội (HUST)</p>
+                    <p>GPA: 3.6/4.0 | Chuyên ngành: Công nghệ phần mềm</p>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2>Kỹ năng</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">JavaScript / TypeScript</span>
+                    <span class="skill-tag">React / Next.js</span>
+                    <span class="skill-tag">Node.js / Express</span>
+                    <span class="skill-tag">PostgreSQL / MongoDB</span>
+                    <span class="skill-tag">Redis / RabbitMQ</span>
+                    <span class="skill-tag">Docker / Kubernetes</span>
+                    <span class="skill-tag">AWS / GCP</span>
+                    <span class="skill-tag">Git / CI/CD</span>
+                    <span class="skill-tag">GraphQL / REST API</span>
+                    <span class="skill-tag">Tailwind CSS / Styled Components</span>
+                    <span class="skill-tag">Jest / Cypress</span>
+                    <span class="skill-tag">Microservices Architecture</span>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2>Dự án tiêu biểu</h2>
+
+                <div class="project-item">
+                    <div class="item-header">
+                        <h3>E-commerce Platform</h3>
+                        <span class="date">2023</span>
+                    </div>
+                    <p>Nền tảng thương mại điện tử fullstack: React + Next.js, Node.js, PostgreSQL, Redis. Hỗ trợ đa ngôn ngữ, đa tiền tệ, payment gateway, admin dashboard real-time.</p>
+                    <a href="https://github.com/nguyenvana/ecommerce" class="project-link" target="_blank">Xem mã nguồn →</a>
+                </div>
+
+                <div class="project-item">
+                    <div class="item-header">
+                        <h3>Task Management SaaS</h3>
+                        <span class="date">2022</span>
+                    </div>
+                    <p>Ứng dụng quản lý dự án kiểu Trello/Jira: Drag-drop board, real-time collaboration (Socket.io), notification system, reporting. Tech: React, TypeScript, NestJS, MongoDB.</p>
+                    <a href="https://github.com/nguyenvana/task-manager" class="project-link" target="_blank">Xem mã nguồn →</a>
+                </div>
+
+                <div class="project-item">
+                    <div class="item-header">
+                        <h3>Component Library (Open Source)</h3>
+                        <span class="date">2023 - Nay</span>
+                    </div>
+                    <p>Thư viện UI components tái sử dụng: 50+ components, Storybook, TypeScript, testing, theming, accessibility (WCAG 2.1 AA). Đã được dùng trong 3 dự án production.</p>
+                    <a href="https://github.com/nguyenvana/ui-lib" class="project-link" target="_blank">Xem mã nguồn →</a>
+                </div>
+            </section>
+
+            <section class="certificates">
+                <h2>Chứng chỉ & Giải thưởng</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">AWS Certified Developer Associate (2023)</span>
+                    <span class="skill-tag">MongoDB Certified Developer (2022)</span>
+                    <span class="skill-tag">Top 10 Hackathon FPT Tech (2021)</span>
+                    <span class="skill-tag">Google Cloud Fundamentals (2022)</span>
+                </div>
+            </section>
+
+            <section class="languages">
+                <h2>Ngoại ngữ</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">Tiếng Việt - Ngôn ngữ mẹ đẻ</span>
+                    <span class="skill-tag">Tiếng Anh - IELTS 7.0 (Fluent)</span>
+                    <span class="skill-tag">Tiếng Nhật - N3 (Sơ cấp)</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>CV được tạo ngày 2024 | Cập nhật gần nhất: Tháng 1/2024</p>
+            <p>Mẫu CV đơn giản, hiện đại - Dễ dàng tùy chỉnh theo nhu cầu cá nhân</p>
+        </footer>
+    </div>
+</body>
+</html>
